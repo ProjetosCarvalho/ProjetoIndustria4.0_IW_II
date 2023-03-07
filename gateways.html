@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Aprenda IoT - Gateway</title>
+</head>
+<body class="fundo">
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img class="img_logo" src="img/logot.png" alt="">
+                </div>
+                <div class="itens_menu">
+                    <ul>
+                        <li><a href="redirect.html">Inicio</a></li>
+                        <li><a href="redirectsobre.html">Sobre</a></li>
+                        <li><a href="redirectcontato.html">Fale conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="#intro">Introdução</a></li>
+                    <li><a href="#gate">Gateway</a></li>
+                    <li><a href="#cidades">Cidades Inteligentes</a></li>
+                    <li><a href="#moveis">Gateways Móveis</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <figure>
+        <img class="img_topo" src="img/banner.avif" alt="">
+    </figure>
+    <div class="container">
+        <section id="intro">
+            <h1>Objetos inteligentes miniaturizados e sem fios</h1>
+            <p>
+                Várias aplicações de Internet das Coisas preveem o uso de dispositivos que precisam ser leves, 
+                pequenos e sem fios. Para que eles não tenham fios, é necessário que a alimentação do objeto 
+                seja feita por baterias e  que use algum padrão de comunicação sem fios. Como vimos na aula 
+                de hardware, existe um compromisso entre a capacidade de comunicação (distância e quantidade de dados) e o consumo de energia. 
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura64.png" alt="">
+            </figure>
+            <p>
+                Por isso, para dispositivos miniaturizados e com bateria, é desejável utilizar um padrão de  comunicação para curtas distâncias e com 
+                baixa taxa de transmissão de dados. Um exemplo deste tipo de padrão é o Bluetooth Low Energy (BLE).
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura65.png" alt="">
+            </figure>
+            <p>
+                Nesse caso o BLE e outros padrões funcionam bem, mas eles têm um porém: eles não se conectam à Internet!
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura66.png" alt="">
+            </figure>
+            <p>
+                Por isso, para possibilitar o uso deste tipo de tecnologia de curto alcance, os objetos inteligentes podem utilizar um gateway.           
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura67.png" alt="">
+            </figure>
+        </section>
+        <section id="gate">
+            <h1>Gateway</h1>
+            <p>
+                Gateway é uma palavra da língua inglesa que significa portal.
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura68.png" alt="">
+            </figure>
+            <p>
+                Na Internet das Coisas, gateways são utilizados como intermediários entre os objetos inteligentes e a Internet. Os gateways fazem a interligação entre redes. 
+                Eles possuem dois protocolos de comunicação e fazem a tradução entre eles. Mas como funciona o gateway na Internet das Coisas?
+            </p>
+            <p>
+                Na IoT, os objetos inteligentes que possuem restrição de bateria comunicam-se com um gateway a uma distância curta e o gateway por sua vez, comunica-se com a Internet com outro padrão de comunicação, para longas distâncias. 
+                Desta forma o gateway tem o papel de conectar o objeto inteligente à Internet.
+            </p>
+            <p>
+                Padrões de comunicação sem fio com baixo consumo de energia que são normalmente utilizados para comunicação com gateway são: Bluetooth, Bluetooth Low Energy e Zigbee. 
+            </p>
+            <p>
+                Já a comunicação entre gateways e a Internet é normalmente realizada com: WiFi, Ethernet e redes de dados de celulares (GPRS, 3G, 4G). 
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura69.png" alt="">
+            </figure>
+            <p>
+                Vamos analisar um exemplo...
+            </p>
+            <h1>Relógio Inteligente</h1>
+            <p>
+                A figura abaixo mostra um exemplo de um Relógio inteligente que usa um celular como gateway para comunicação com a nuvem.
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura70.png" alt="">
+            </figure>
+            <p>
+                Neste exemplo o relógio, além de exibir as horas, também possui um sensor de batimentos cardíacos (já que ele fica sempre no pulso, fica fácil medir).
+                E esses dados de batimentos cardíacos poderiam ser enviados, por exemplo, aos servidores 
+                (que ficam na nuvem) do hospital em que o usuário é conveniado, para análise do médico responsável.
+            <p>
+                Porém, esse relógio dispõe apenas do Bluetooth Low Energy (BLE) para se comunicar, o que significa 
+                que ele precisa de um gateway para enviar dados para a Internet.
+            </p>
+            <p>
+                Nesse caso, o gateway é um smartphone, que possui ambas as tecnologias de comunicação: BLE e WiFi. Agindo como um gateway o smartphone coleta as informações do sensor usando 
+                BLE e as envia para o serviço Web do hospital através da Internet utilizando o WiFi!
+            </p>
+            <h1>Gateway com múltiplas coisas</h1>
+            <p>
+                Também é possível conectar múltiplas coisas a um mesmo gateway. 
+            </p>
+            <p>
+                Em uma extrapolação do exemplo do relógio inteligente, poderíamos considerar vários sensores 
+                ligados aos nossos corpos, identificando além de batimentos cardíacos, queda e alteração de sinais vitais.
+            </p>
+           <p>
+            Todos estes sensores se comunicam com um smartphone por Bluetooth Low Energy (BLE) e o smartphone por sua vez se comunica com a Internet por Wifi, 
+            atuando como gateway para envio dos dados de todos os sensores para a Internet. 
+           </p>
+            <figure>
+                <img class="img_corpo" src="img/figura71.png" alt="">
+            </figure>
+        </section>
+        <section id="cidades">
+            <h1>Cidades Inteligentes</h1>
+            <p>
+                Em uma cidade inteligente estima-se que possa existir uma grande quantidade de coisas conectadas, incluindo medidores de consumo de água, 
+                luz e gás, lixeiras e postes de luz inteligentes, vagas de estacionamento conectadas, etc.
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura72.png" alt="">
+            </figure>
+            <p>
+                Todas estas coisas precisam ser conectadas e uma parte delas não possui fonte de energia elétrica. Para 
+                viabilizar as aplicações de Internet das Coisas há um esforço para o desenvolvimento 
+                de uma rede de comunicação de baixa potência para cobrir a área de uma cidade.  
+            </p>
+            <p>
+                Estas redes de comunicação de baixa potência estão sendo construídas utilizando gateways compartilhados. Uma variedade de coisas 
+                inteligentes pode se conectar a um mesmo gateway que fará a ponte delas com a Internet.
+            </p>
+            <p>
+                Exemplos de padrões de comunicações deste tipo são:
+            </p>
+            <p>
+                - LoRA: um padrão de comunicação de baixa capacidade de transmissão, mas de longo alcance e baixo consumo de energia.
+            </p>
+            <p>
+                - LTE MTC: uma especialização do padrão LTE (a tecnologia por trás do 4G) focado no baixo consumo de energia.
+            </p>
+            <p>
+                - NB-IoT: similar aos anteriores, mas com foco em ambientes internos (casas, prédios, etc.).
+            </p>
+            <p>
+                Uma rede deste tipo, utilizando o padrão LoRA, foi desenvolvida na Holanda. A rede foi disponibilizada em Novembro de 2016 e 
+                em meados de 2017, já havia mais de um milhão e quinhentos mil dispositivos conectados. 
+            </p>
+            <p>
+                Este tipo de rede é um exemplo real da utilização de gateways com múltiplas coisas conectadas.
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura73.png" alt="">
+            </figure>
+            <h1>Redes de sensores e sorvedouros</h1>
+            <p>
+                Existem ainda algumas aplicações nas quais há amplas áreas cobertas com dispositivos de sensoriamento, 
+                como na agricultura por exemplo. Estes dispositivos de 
+                sensoriamento podem estar medindo o nível de nutrientes e de umidade do solo, por exemplo.
+            </p>
+            <p>
+                Neste caso, para minimizar a necessidade de comunicações de longas distâncias, os dispositivos podem repassar as suas medidas de um para o outro, até chegar a um gateway. Desta forma, os sensores precisam se conectar apenas com os seus vizinhos, 
+                o que faz com que as comunicações possam ser de curto alcance, reduzindo o consumo de energia.
+            </p>
+            <p>
+                Aos sensores que agregam os dados coletados dos outros sensores e que fazem a conexão com o gateway, chamamos de sorvedouros.  Em outras palavras, 
+                os sorvedouros acumulam as medidas de um conjunto de sensores e repassam estes dados a um gateway.
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura74.png" alt="">
+            </figure>
+        </section>
+        <section id="moveis">
+            <h1>Gateways Móveis</h1>
+            <p>
+                Existe ainda uma estratégia de conectividade que utiliza gateways móveis. Nesta estratégia, os dados dos sensores são agregados em vários sorvedouros e um 
+                gateway móvel é utilizado para coletar os dados destes sorvedouros.  Os gateways móveis podem ser carregados por qualquer meio, seja por veículos, 
+                animais, pessoas, robôs, etc.
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura75.png" alt="">
+            </figure>
+        </section>
+    </div>
+    <footer>
+        <p class="p_centro">Desenvolvido por Brian Souza e Giovanna Carvalho</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Aprenda IoT - Aplicando</title>
+</head>
+<body class="fundo">
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img class="img_logo" src="img/logot.png" alt="">
+                </div>
+                <div class="itens_menu">
+                    <ul>
+                        <li><a href="redirect.html">Inicio</a></li>
+                        <li><a href="redirectsobre.html">Sobre</a></li>
+                        <li><a href="redirectcontato.html">Fale conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="#exemplo">Exemplo</a></li>
+                    <li><a href="#rotas">Rotas e compromissos</a></li>
+                    <li><a href="#obj">Objetos minimalistas</a></li>
+                    <li><a href="#nuvem">Nuvem</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <figure>
+        <img class="img_topo" src="img/banner.avif" alt="">
+    </figure>
+    <div class="container">
+        <section id="exemplo">
+            <h1>Exemplo: Geladeira Inteligente</h1>
+            <p>
+                Vamos agora analisar o hardware e o software que estão por trás do exemplo da geladeira inteligente? 
+                Vocês se lembram o que a geladeira inteligente do nosso exemplo faz? Ela detecta os alimentos que estão 
+                no seu interior, gera uma lista de compras e faz compras pela Internet, além de opcionalmente, 
+                também fornecer seus dados para instituições de pesquisa sobre saúde alimentar.
+            </p>
+            <p>
+                Quais itens de hardware e software são necessários para que a geladeira possa fazer isso?
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura54.png" alt="">
+            </figure>
+            <p>
+                Vamos começar pelos nossos já conhecidos componentes do hardware: processador, 
+                comunicador, fonte de energia e sensor/atuador.
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura55.html" alt="">
+            </figure>
+            <p>
+                O hardware que executa na geladeira consiste em:
+            </p>
+            <p>
+                - Sensor: identificador de produtos. Precisamos utilizar um sensor que identifique quais são os itens que 
+                estão no interior da geladeira inteligente, para que ela possa gerar a lista de compras. Poderiam ser 
+                utilizados vários tipos de sensores, como por exemplo: 
+                uma câmera, um detector de RFID ou um leitor de código de barras.             
+            </p>
+            <p>
+                - Comunicação: conexão sem fios, utilizando o WiFi para conexão à Internet. Para que a geladeira inteligente 
+                possa se comunicar, ela precisa de uma conexão a uma rede de comunicação. Como em muitas casas temos redes Wi-Fi conectadas 
+                à Internet, vamos considerar este tipo de conexão no nosso exemplo.
+            </p>
+            <p>
+                - Processador: Arduino. Para fazer o processamento do software que executa na nossa geladeira, precisamos 
+                escolher uma unidade de processamento central, 
+                que pode utilizar uma plataforma de hardware livre, como a Arduino, por exemplo.
+            </p>
+            <p>
+                - Fonte de energia: tomada. Para alimentar de energia elétrica a eletrônica que fica dentro da geladeira inteligente, podemos 
+                utilizar a conexão à rede elétrica pela tomada, aproveitando que a geladeira já tem esta conexão.
+            </p>
+            <p>
+                A geladeira inteligente do nosso exemplo, possui várias funções. Como já vimos, cada uma destas funções são instruídas para a geladeira inteligente pelo software. 
+                Vamos ver quais são as partes do software que compõem a nossa geladeira inteligente?
+            </p>
+            <p>
+                - Lista de Compras: a principal função da geladeira inteligente do nosso exemplo é nos ajudar a manter a 
+                geladeira abastecida. Para isso, a geladeira inteligente utiliza as informações captadas pelo sensor que identifica 
+                quais produtos estão dentro da geladeira para montar uma lista de compra. 
+            </p>
+            <p>
+                - Serviço web para acessar a lista de compras: para que a lista de compras possa ser acessada através de um celular, a geladeira inteligente disponibiliza 
+                um serviço Web. Este acesso poderia ser feito pela Internet ou pela rede local da casa.
+            </p>
+            <p>
+                - Cliente web para fazer compras automaticamente: para que as compras da lista de compras seja feita 
+                automaticamente, a geladeira inteligente vai precisar ter um cliente Web para se comunicar com um 
+                supermercado com vendas online e fazer as compras dos produtos que estão faltando na geladeira.
+            </p>
+            <p>
+                - Cliente web para contribuir com pesquisas sobre os hábitos de consumo no Brasil: para enviar a lista de produtos da geladeira para uma instituição que recolhe dados para fazer a análise de alimentação dos brasileiros, a geladeira deve ter um cliente web 
+                que envia a lista de produtos da geladeira para um servidor da instituição de pesquisa.
+            </p>
+            <p>
+                Além do software e do hardware que executam na geladeira, esta aplicação interage com outro programas de software que executam em outro hardware:
+            </p>
+            <p>
+                - Aplicativo para consulta da lista de compras no celular: para ser possível usar o celular e acessar a lista de compras com os itens que estão faltando na geladeira, o celular deve ter um aplicativo que é um cliente Web. O cliente Web do celular acessa o 
+                serviço Web que está sendo executado na geladeira e pede a lista de compras para ele.
+            </p>
+            <p>
+                - Serviço de compras de supermercado online: para fazer as compras dos produtos que estão na lista de compras, a Geladeira Inteligente se comunica 
+                com um servidor que tem um serviço Web de um supermercado que oferece compras online.
+            </p>
+            <p>
+                - Análise de hábitos de consumo alimentar: para que a geladeira inteligente possa compartilhar os dados sobre o consumo de alimentos, ela precisa 
+                se conectar a um servidor com um serviço web de uma instituição que faça este tipo de pesquisa. 
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura56.png" alt="">
+            </figure>
+            <figure>
+                <img class="img_corpo" src="img/figura57.png" alt="">
+            </figure>
+            <p>
+                Por fim, encaixando os módulos da nossa geladeira inteligente na arquitetura de IoT, temos no componente de percepção o sensor para identificar os produtos, no item de rede a conexão à Internet via Wi-Fi, no componente de aplicação o Gerenciador de 
+                Produtos que gera a lista de compras e o Serviço de Análise de Hábitos de Consumo.
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura58.png" alt="">
+            </figure>
+        </section>
+        <section id="rotas">
+            <h1>Rotas tecnológicas</h1>
+            <p>
+                Mostramos até aqui como aplicar hardware e software para construir alguns exemplos de sistemas de IoT.
+                Mas será que esta é a única maneira de concretizar estes exemplos? Eles não poderiam ser construídos de outra maneira? A resposta é sim. 
+                Existem várias maneiras de construir um sistema que implementa uma mesma função.
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura59.png" alt="">
+            </figure>
+            <p>
+                Lembre que na aula de hardware falamos dos compromissos que devemos considerar para construir um objeto inteligente?
+
+                As escolhas que fazemos para a construção de uma solução vão moldar o resultado final do nosso projeto. Cada escolha tem seus impactos 
+                positivos e negativos, sendo que um projeto busca obter um equilíbrio entre estes impactos.
+            </p>
+            <h1>Pensando em compromissos</h1>
+            <p>
+                Quanto mais inteligentes forem os objetos que utilizamos nas nossas soluções de IoT, 
+                mais potentes deverão ser seus processadores.
+            </p>
+            <p>
+                Um processador mais potente custa mais caro e consome mais energia elétrica. Um consumo de energia elétrica mais elevado requer o uso de baterias maiores. 
+                Baterias maiores ocupam mais espaço, pesam mais e são mais caras.
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura60.png" alt="">
+            </figure>
+            <p>
+                Será que conseguiríamos alterar os exemplos do Poste de Iluminação, da Lixeira e da Geladeira para termos 
+                objetos menos inteligentes mas que ainda façam as mesmas coisas? Sim. Poderíamos diminuir a inteligência dos objetos inteligentes se pudéssemos 
+                transferir parte do software que executa neles para ser executado em outro lugar.
+            </p>
+        </section>
+        <section id="obj">
+            <h1>Objetos minimalistas</h1>
+            <h2>Geladeira Inteligente</h2>
+            <p>
+                A nossa geladeira inteligente, possui um pouco mais de software: além da identificação dos itens que estão armazenados na geladeira, ela possui um sistema para o dono da geladeira dizer quais itens ele quer que estejam sempre na geladeira (para gerar a lista de compras). Ela também possui um serviço Web para distribuir a lista de compras para quem precise. Ela tem ainda um módulo que 
+                faz compras online e outro que contribui com pesquisas sobre hábitos de alimentação!
+            </p>
+            <p>
+                Resumindo, a geladeira inteligente possui os seguintes módulos de software:
+                Identificador de itens;
+                Lista de Compras;
+                Serviço Web para acessar a lista de compras;
+                Cliente Web para fazer compras automaticamente;
+                Cliente Web para contribuir com pesquisas sobre os hábitos de consumo no Brasil.
+            </p>
+            <p>
+                Para simplificar o software da geladeira inteligente, poderíamos manter nela apenas a identificação dos produtos que estão no seu interior. Assim o software da geladeira inteligente consistiria em:
+                Identificador de itens na geladeira;
+                Cliente web para envio da lista de itens na geladeira.
+            </p>
+        </section>
+        <section id="nuvem">
+            <h1>Processamento na nuvem</h1>
+            <p>
+                Desta forma teríamos objetos não tão inteligentes assim. Mas se essas funções não estiverem 
+                mais sendo executadas nos nossos objetos inteligentes, onde elas vão ser executadas?
+                O conteúdo passa a ficar disponível na nuvem, isto é na Internet, podendo ser acessado a 
+                partir de qualquer dispositivo a qualquer momento.
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura61.png" alt="">
+            </figure>
+            <p>
+                A computação em nuvem consiste em repassar tarefas de um computador local para uma infraestrutura em outro 
+                local, acessada pela Internet.  Esta infraestrutura consiste em um conjunto de recursos computacionais, 
+                que podem ser componentes de hardware, rede, armazenamento, software e aplicações.
+            </p>
+            <p>
+                No nosso caso, podemos considerar que partes do software que estava sendo executado no objeto inteligente, 
+                estará executando em algum servidor conectado à Internet, acessível  como um serviço Web.
+            </p>
+            <h2>Objetos minimalistas e nuvem</h2>
+            <p>
+                Agora vamos ver como esses servidores na nuvem poderiam ajudar a manter a funcionalidade da nossa geladeira minimalista! 
+                Lembram que tiramos alguns módulos de software, incluindo o serviço Web da geladeira? Vamos então colocar eles pra rodar em um servidor 
+                na nuvem! Assim, no final a solução completa ficaria da seguinte forma:
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura62.png" alt="">
+            </figure>
+            <h1>Nuvem e neblina</h1>
+            <p>
+                Como mostramos, existem duas abordagens para implementar a Internet das Coisas: 
+            </p>
+            <p>
+                - Minimizando a inteligência dos objetos e utilizando ao máximo o processamento  
+                na nuvem. O que é denominado de Cloud Centric IoT (Centrado na Nuvem); 
+            </p>
+            <p>
+                - Explorando a inteligência dos objetos, utilizando a Internet para a comunicação entre objetos. 
+                O que é denominado Fog Computing  (Computação na Neblina) ou Edge Computing (Computação na Borda).
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura63.png" alt="">
+            </figure>
+            <h1>Computação em neblina</h1>
+            <p>
+                O termo computação em neblina foi criado para denominar a computação realizada em dispositivos com menor capacidade de processamento, mas próximos ao 
+                usuário final, em oposição ao processamento em servidores, que acontece na nuvem.
+            </p>
+            <p>
+                Computação em neblina pode designar computação nos objetos inteligentes ou nos dispositivos entre os objetos 
+                e os servidores, como gateways e roteadores.
+            </p>
+            <p>
+                Há ainda o termo computação na borda ou edge computing, para designar o processamento nos objetos.
+            </p>
+        </section>
+        <figure>
+            <a class="botao" href="gateways.html" target="blank">Gateways</a>
+        </figure>
+    </div>
+    <footer>
+        <p class="p_centro">Desenvolvido por Brian Souza e Giovanna Carvalho</p>
+    </footer>
+</body>
+</html>

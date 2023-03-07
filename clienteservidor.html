@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Aprenda IoT- Arquitetura Cliente-Servidor</title>
+</head>
+<body class="fundo">
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img class="img_logo" src="img/logot.png" alt="">
+                </div>
+                <div class="itens_menu">
+                    <ul>
+                        <li><a href="redirect.html">Inicio</a></li>
+                        <li><a href="redirectsobre.html">Sobre</a></li>
+                        <li><a href="redirectcontato.html">Fale conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="#conceito">O que é?</a></li>
+                    <li><a href="#servidor">Servidor Web</a></li>
+                    <li><a href="#pubesub">Publish/Subscribe</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <figure>
+        <img class="img_topo" src="img/banner.avif" alt="">
+    </figure>
+    <div class="container">
+        <section id="conceito">
+'           <h1>Arquitetura Cliente-Servidor</h1>
+            <p>
+                Para um computador se comunicar com outro ou um objeto inteligente trocar 
+                informações com outro, precisaremos utilizar uma arquitetura. Lembrando que 
+                uma arquitetura é um modelo 
+                que auxilia o desenvolvimento de um projeto e facilita sua implementação.
+            </p>
+            <p>
+                A arquitetura cliente-servidor é um modelo que distribui tarefas entre fornecedores de um recurso ou serviço, 
+                denominados servidores, e os requerentes dos serviços, chamados de clientes. 
+            </p>
+            <p>
+                Servidores e clientes são computadores ou equipamentos de hardware. 
+                Servidores prestam serviços para muitos clientes.
+            </p>
+            <p>
+                A arquitetura cliente-servidor parte do princípio que um cliente inicia 
+                um pedido enviando uma solicitação para um servidor que a processa e retorna 
+                com os dados solicitados. 
+                Com base nesta resposta, o cliente pode fazer novas requisições. 
+            </p>
+            <p>
+                Um cliente pode ser um celular, um tablet ou um computador.
+                Um servidor é um computador com grande capacidade de processamento.
+            </p>
+            <figure><figure>
+                <img class="img_corpo" src="img/figura50" alt="">
+            </figure></figure>
+            <p>
+                Geralmente um servidor oferece vários serviços, pois isso elimina a 
+                necessidade de aquisição de vários servidores, já que esses computadores são
+                especiais e portanto, custam caro. Por isso, quando o cliente faz uma 
+                requisição ao servidor, ele indica uma 
+                determinada porta. Cada porta responde a um serviço.
+            </p>
+            <p>
+                Quando o cliente e o servidor se comunicam por meio da Internet chamamos 
+                estes serviços de serviços Web. Um dos serviços Web é o fornecimento de 
+                páginas de Internet -- ou, resumindo, sites --, as quais são acessadas 
+                por meio dos navegadores. 
+                O funcionamento é bem simples. Vamos entender por meio de um exemplo. 
+            </p>
+            <p>
+                Um usuário acessa o endereço de uma página por meio do seu navegador web. 
+                Então seu computador, o cliente, envia uma requisição para o endereço da 
+                página que ele quer carregar. O servidor, ao receber a requisição, irá 
+                processá-la e retornar a página que o usuário quer visualizar. O usuário 
+                pode interagir com essa página, clicando em links por exemplo, enviando assim 
+                uma nova requisição ao servidor, iniciando todo o processo novamente.
+            </p>
+            <p>
+                É fácil notar no exemplo que o cliente e o servidor não estão no mesmo 
+                computador. O servidor pode estar em outra cidade ou outro continente. Por isso a comunicação
+                entre eles é feita através de uma rede, neste caso: a Internet.
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura51.png" alt="">
+            </figure>
+            <p>
+                Um servidor pode também fazer uma requisição a outro servidor, atuando neste caso como cliente.  
+                Mas como isso é possível? Vamos ver um exemplo.
+            </p>
+            <p>
+                Imagine que uma pessoa está usando o Google. Ela digita "previsão do tempo",
+                e aperta a tecla 'Enter'. O computador dessa pessoa irá atuar como cliente 
+                e enviar uma requisição para o serviço Web no servidor do Google. Este 
+                serviço, por sua vez, irá agir como um cliente e pesquisar na Internet por sites de meteorologia. Eventualmente ele irá descobrir quais websites são relevantes e 
+                devolver uma lista com estes sites para o cliente que fez o pedido.
+            </p>
+            <p>
+                Os clientes e os servidores se comunicam fazendo uso de protocolos de comunicação, especificamente o protocolo TCP/IP 
+                (Transmission Control Protocol/ Internet Protocol).
+            </p>
+        </section>
+        <section id="servidor">
+            <h1>Servidor Web</h1>
+            <p>
+                Existe um serviço conhecido como Servidor Web (também conhecido como 
+                servidores HTTP) que recebe e manipula todos os pacotes que vem pela porta 80, ou seja, são responsáveis pela 
+                troca de solicitações de páginas de Internet entre usuário e servidor. 
+            </p>
+            <p>
+                Servidores Web permitem armazenar um conjunto de páginas Web. É por meio 
+                destes servidores que sites são 
+                disponibilizados para os usuários que os acessam. Em outras palavras, o Servidor Web é o responsável por disponibilizar 
+                as páginas Web de cada site.
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura52.png" alt="">
+            </figure>
+            <p>
+                Funciona de forma bem simples. Vamos entender com um exemplo.
+                Quando um usuário abre um navegador, digita o endereço de uma 
+                página Web e pressiona uma tecla para carregá-la, o navegador 
+                envia uma requisição HTTP para o endereço digitado. O Website 
+                hospedado no servidor recebe a requisição HTTP e responde com a 
+                página solicitada. Essa página é o conteúdo de um arquivo de 
+                extensão .html ou .php que é interpretada pelo navegador e 
+                exibida na tela do usuário.
+            </p>
+            <p>
+                Geralmente um Servidor Web é implementado com diferentes tecnologias como 
+                PHP (Hypertext PreProcessor) ou servidores ASP (Active Server Pages) que 
+                permitem criar aplicações com conteúdo dinâmico, juntamente com um servidor 
+                de Banco de Dados (como MySQL ou Oracle) responsável pelo armazenamento de 
+                informações. Se o servidor Web fosse 
+                implementado sozinho ele seria capaz apenas de exibir páginas HTML estáticas.
+            </p>
+        </section>
+        <section id="pubesub">
+            <h1>Publish/Subscribe</h1>
+            <p>
+                Como vimos, na arquitetura cliente/servidor tradicional o cliente é o 
+                responsável por fazer uma requisição e aguardar a resposta do servidor. 
+                Já na arquitetura Publish/Subscribe, o conceito é outro. 
+            </p>
+            <p>
+                A arquitetura Publish/Subscribe é um modelo de comunicação entre computadores. 
+                Neste modelo consumidores (subscribers – assinantes) expressam seu interesse 
+                em um ou mais serviços, para que possam vir a ser notificados quando 
+                informações geradas nesses serviços por um produtor 
+                (publisher – publicador) combinam com as informações de seu interesse. 
+            </p>
+            <p>
+                Podemos dizer que a arquitetura Publish/Subscribe inverte o modelo
+                 tradicional do cliente solicitando um serviço. Neste modelo é o servidor 
+                 que inicia a comunicação e envia dados aos clientes que assinaram o serviço. Neste modelo, é o servidor que empurra os dados para os clientes, 
+                utilizando uma arquitetura padrão chamada Publish/Subscribe. 
+            </p>
+            <figure>
+                <img class="img_corpo" src="img/figura53.png" alt="">
+            </figure>
+            <p>
+                Vamos ver um exemplo. Produtores de informações como sensores são os 
+                publishers e publicam suas leituras em um Banco de Dados. As leituras são 
+                enviadas do Banco de Dados para um gerenciador de eventos localizado no 
+                servidor. Consumidores de informações interessados assinam esse gerenciador 
+                indicando para quais sensores desejam receber leituras. E desta forma, se 
+                tornam assinantes ou subscribers. O gerenciador de eventos recebe as leituras 
+                dos sensores e as envia para seus respectivos clientes assinantes. 
+            </p>
+            <p>
+                O uso de um gerenciador de eventos como mediador proporciona um 
+                desacoplamento entre produtores (publishers) e assinantes (subscribers). 
+                Esse desacoplamento elimina qualquer dependência entre eles, aumenta a 
+                escalabilidade (a adição ou remoção de produtores ou assinantes é 
+                independente da interação) e o ambiente dinâmico resultante se adapta 
+                bem em redes móveis onde há frequentes conexões e desconexões.
+            </p>
+        </section>
+    </div>
+    <footer>
+        <p class="p_centro">Desenvolvido por Brian Souza e Giovanna Carvalho</p>
+    </footer>
+</body>
+</html>
