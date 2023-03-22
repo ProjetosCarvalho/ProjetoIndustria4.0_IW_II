@@ -104,7 +104,7 @@ main {
     width: 100%;
     position:absolute;
     z-index: 1000;
-    top: 16.9%;
+    top: 11.9%;
     background-color: rgba(33, 149, 231, 0.758);
     text-align: center;
 }
@@ -176,6 +176,16 @@ figure{
     text-align: center;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+.video{
+    margin-top: 3%;
+    text-align: center;
+}
+
+.separar{
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .botao{
@@ -354,6 +364,11 @@ input[type=text], input[type=tel], input[type=email], select, textarea {
     .img_topo {
         margin-top: 10%;
         height: 300px;
+    }
+
+    .video{
+        display: block;
+        width: 30%;
     }
 
     h1{
